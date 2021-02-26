@@ -1,0 +1,6 @@
+pandas
+scikit-learn
+google
+google-cloud-bigquery
+pyarrow
+bs4
