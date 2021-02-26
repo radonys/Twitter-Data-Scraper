@@ -112,7 +112,7 @@ def scrape_tweet_ids(user):
                     
                     #print(datetime.datetime.strptime(dt.split("T")[0], '%Y-%m-%d').date(), datetime.datetime.strptime('2021-02-25', '%Y-%m-%d').date(), datetime.datetime.strptime('2021-02-25', '%Y-%m-%d').date() != datetime.datetime.strptime(dt.split("T")[0], '%Y-%m-%d').date())
 
-                    if datetime.datetime.strptime('2021-02-25', '%Y-%m-%d').date() != datetime.datetime.strptime(dt.split("T")[0], '%Y-%m-%d').date():
+                    if datetime.datetime.now().date() != datetime.datetime.strptime(dt.split("T")[0], '%Y-%m-%d').date():
                         flag = False
                         
                     ids.add((tweet_id, dt))
